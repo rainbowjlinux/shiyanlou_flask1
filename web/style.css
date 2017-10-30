@@ -1,0 +1,68 @@
+body {
+    color: yellow;
+    background-color: powderblue;
+}
+
+h1 {
+    color: blue;
+    font-size: 40px;
+}
+
+nav {
+    color: green;
+    font-size: 30px;
+}
+
+section {
+    color: red;
+    font-size: 20px;
+}
+
+article, aside {
+    color: red;
+    font-size: 10px;
+}
+
+/* selector 1 */
+h1 strong {
+    color: red;
+}
+
+/* selector 2 */
+#form1 input {
+    color: purple;
+}
+
+/* selector 3 */
+.container {
+    color: pink;
+}
+.subcontainer {
+    color: brown
+}
+
+/* selector 3 */
+[title] {
+    color: orange;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 800;
+    background-color: tomato;
+}
+
+/* frame */
+* {
+margin: 0;
+padding: 0;
+}
+
+.box {
+width: 70px;
+height: 30px;
+margin: 60px;
+
+border-style: solid;
+border-width: 50px;
+
+padding: 50px;
+}
