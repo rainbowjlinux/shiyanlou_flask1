@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% from 'macro.html' import course_item %}
+
+{% block header %}
+<h1>Index page</h1>
+{% endblock %}
+
+{% block content %}
+<div> {{ course_item(course, "louplus") }} </div>
+<div> {{ '=' * 20 }} </div>
+
+<div> teacher email: {{ course.teacher.email|hidden_email }} </div>
+
+{% if course.is_private %}
+    <p> course {{course.name}} is private </p>
+{% else %}
+    <p> course {{course.name}} is public </p>
+{% endif %}
+
+{% for tag in course.tags %}
+    <span>{{tag}}</span>
+{% endfor %}
+{% endblock %}
